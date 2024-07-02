@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playwrite IT Moderna', sans-serif;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+:root{
+    --fondo: #F2DCE4;
+    --navbar: #733D56;
+    --nbtxt: #F294D9;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+header{
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10%;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 70px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .nav-links{
+    list-style: none;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-links li a:hover{
+    color: var(--nbtxt);
+}
+
+header .btn button{
+    font-weight: 700;
+    color: #fff;
+    padding: 9px 25px;
+    background: linear-gradient(92deg, #F26B8F 18.5%, #F28DCF 82%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+header .btn button:hover{
+    background: linear-gradient(92deg, #F28DCF 18.5%, #F26B8F 82%);
+    color: #000;
+    transform: scale(1.1);
+}
