@@ -84,3 +84,85 @@ header .btn button:hover{
     color: #000;
     transform: scale(1.1);
 }
+
+/*Carrousel
+
+.carrousel{
+    width: 100%;
+    max-width: 120em;
+    overflow: hidden;
+    /*transition: all 0.4s ease;
+}
+
+.carrousel .grande{
+    width: 400%;
+    display: flex;
+    transition: transform 0.5s ease;
+    /*flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(0%);
+}
+
+.carrousel .img{
+    /*width: calc(100% / 4);
+    height: 80vh;
+    min-height: 10vh;
+    width: 25%;
+    min-width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrousel .img-container{
+    width: 25%;
+    min-width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.carrousel .puntos{
+    width: 100%;
+    padding: 0.4em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0s
+}
+
+.carrousel .punto.active{
+    color: var(--nbtxt);
+
+}*/
+
+.carrousel {
+    width: 100%;
+    height: 80vh; /* Ocupa el 50% de la altura de la pantalla */
+    overflow: hidden;
+    position: relative;
+}
+
+.carrousel .grande {
+    display: flex;
+    width: 400%; /* Ajuste dinámico para cubrir todas las imágenes */
+    transition: transform 0.5s ease; /* Ajusta la transición */
+    height: 100%;
+}
+
+.carrousel .img-container {
+    width: 100%;
+    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
+}
+
+.carrousel .img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill; /* Ajusta la imagen para que se ajuste dentro del contenedor */
+}
