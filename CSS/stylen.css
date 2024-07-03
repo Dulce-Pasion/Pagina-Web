@@ -295,12 +295,11 @@ header .btn button:hover{
 }
 
 .texto-superpuesto h3{
+    padding-top: 10px;
     margin-top: 40px;
     font-size: 50px;
     transition: color 1s ease;
 }
-
-
 
 .texto-superpuesto p{
     font-size: 30px;
