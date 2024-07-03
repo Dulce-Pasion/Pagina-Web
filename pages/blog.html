@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dulce Pasión</title>
+    <link rel="stylesheet" href="../CSS/styleb.css">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo"></img>
+            </a>
+        </div>
+        <nav>
+            <ul class="ul nav-links">
+                <li><a href="carta.html">Nuestra Carta</a></li>
+                <li><a href="blog.html">Blog Pasión</a></li>
+                <li><a href="casas.html">Nuestras Casas</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn" id="showForm"><button>¡Pide aquí!</button></a>
+    </header>
+
+    <!--Formulario-->
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario de Pedido</h2>
+            <form id="pedidoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pedido" class="pedido">Pedido</label>
+                <textarea id="pedido" name="pedido" required></textarea>
+
+                <label for="opciones">Elija una opción:</label>
+                <select id="opciones" name="opciones">
+                    <option value="recojo">Recojo en sede</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <div id="direccionSede" style="display: none;">
+                    <label for="direccionEmpresa">Dirección de la empresa:</label>
+                    <input type="text" id="direccionEmpresa" name="direccionEmpresa" readonly value="Av. José A. Larco 127, Miraflores">
+                </div>
+    
+                <div id="direccionDelivery" style="display: none;">
+                    <label for="direccionUsuario">Ingrese su dirección:</label>
+                    <input type="text" id="direccionUsuario" name="direccionUsuario">
+                </div>
+
+                <label for="fecha" class="fecha">Fecha del Pedido</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!--nosotros-->
+    <div class="img-container">
+        <div class="img">
+            <img src="../assets/imagen1.jpg" alt="Casa 1" class="imagen-casa">
+            <div class="texto-superpuesto">
+                <h3>Blog Pasion</h3>
+                <p>Novedades culinarias cada mes</p>
+            </div>
+        </div>
+    </div>
+    <section class="casas">
+        <div class="casas-container">
+            <div class="casa">
+                <img src="../assets/pandan.jpg" alt="Casa 1">
+                <h2>El Pandan, ingrediente traido desde Japón</h2>
+                <h4>Auge de la gastronomía</h4>
+                <p>Su influencia en nuestra repostería es ya una realidad con ingredientes como el té verde y el té matcha muy implementados en la repostería europea y americana. Aunque más tímidamente, frutas como el yuzu (de la familia de los cítricos) o bebidas como el whisky japonés o el sake comienzan poco a poco a utilizarse en nuestra repostería. Y están por llegar nuevos sabores asiáticos mucho más complejos. Es el caso del pandan o pandano, una planta cuyas hojas se utilizan tanto para envolver carnes o pescados para aromatizar, como para aportar de forma natural un color verde intenso y dar un peculiar sabor avainillado a postres y bebidas.
+                </p>
+            </div>
+
+            <div class="casa">
+                <img src="../assets/mini.jpg" alt="Casa 1">
+                <h2>El formato mini en la pastelería</h2>
+                <h4>Renovación dentro de la preparación</h4>
+                <p>En lo que se refiere al tamaño de las porciones y al formato más demandado, se imponen los  pasteles en miniatura. El formato individual y de tamaño XS permite disfrutar a la hora del postre y en los grandes acontecimientos en familia o con amigos, superando las principales barreras de los comensales a la hora de pedir postre (la saciedad, la salud, el precio…). Además, el formato de pastelería en miniatura se asocia con la idea de degustación propia de paladares más curiosos que así tienen la oportunidad de probar un mayor número de creaciones y sabores.</p>
+            </div>
+
+            <div class="casa">
+                <img src="../assets/horneado.jpg" alt="Casa 1">
+                <h2>Revolución al modelo de negocio</h2>
+                <h4>El auge de lo recien horneado</h4>
+                <p>Si lo artesanal irrumpió con fuerza hace unos años, a esta etiqueta se añade ahora la del “recién horneado”. Poner al alcance de tus clientes un producto recién hecho tiene un gran atractivo. Cada vez más consumidores optan por comprar en este tipo de establecimientos, al asociar el concepto de recién hecho con producto artesanal y más saludable.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../assets/logo.png" alt="logo"></img>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <a href="nosotros.html" class="">
+                    <b>Nosotros</b>
+                </a>
+            </div>
+            <div class="box">
+                <a href="carta.html">
+                    <b>Carta</b>
+                </a>
+            </div>
+            <div class="box">
+                <a href="contactenos.html">
+                    <b>Contáctenos</b>
+                </a>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>
+                © 2016 Dulce Pasión. Todos los derechos reservados.
+            </small>
+        </div>
+        <div class="grupo-2">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+        </div>
+    </footer>
+
+<script src="../JS/scriptb.js"></script>
+</body>
+</html>
