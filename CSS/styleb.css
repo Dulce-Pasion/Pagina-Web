@@ -297,7 +297,7 @@ header .btn button:hover{
     margin-bottom: 40px;
 }
 
-/*Novedades*/
+/*Blog*/
 .img{
     height: 20vh;
     overflow: hidden;
@@ -330,7 +330,7 @@ header .btn button:hover{
 
 .casa {
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -342,7 +342,7 @@ header .btn button:hover{
 .casa img {
     width: 100%;
     height: auto;
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .casa h2 {

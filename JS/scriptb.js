@@ -69,3 +69,21 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Pedido enviado correctamente.');
     });
 });
+
+
+const colors = ["#FFF", "#000"];
+    let currentColorIndex = 0;
+
+    // Selecciona el elemento <h3> con el id "titulo"
+    const tituloElement = document.getElementById("titulo");
+
+    // Función para cambiar el color del texto
+    function changeColor() {
+        // Cambia el color del texto
+        tituloElement.style.color = colors[currentColorIndex];
+        // Actualiza el índice del color actual
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+    }
+
+    // Cambia el color cada 2 segundos (2000 milisegundos)
+    setInterval(changeColor, 2000);
