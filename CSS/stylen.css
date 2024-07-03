@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playwrite IT Moderna', sans-serif;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+:root{
+    --fondo: #F2DCE4;
+    --navbar: #733D56;
+    --nbtxt: #F294D9;
+    --gradiente:  linear-gradient(92deg, #F26B8F 18.5%, #F28DCF 82%)
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+/*Header*/
+
+header{
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10%;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 70px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .nav-links{
+    list-style: none;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-links li a:hover{
+    color: var(--nbtxt);
+}
+
+header .btn button{
+    font-weight: 700;
+    color: #fff;
+    padding: 9px 25px;
+    background: linear-gradient(92deg, #F26B8F 18.5%, #F28DCF 82%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+header .btn button:hover{
+    background: linear-gradient(92deg, #F28DCF 18.5%, #F26B8F 82%);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/*Footer*/
+
+.footer {
+    background-color: var(--navbar);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer .grupo-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .grupo-1 .box {
+    flex: 1;
+    min-width: 150px;
+    padding: 0;
+}
+
+.footer .grupo-1 figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 figure img {
+    width: 70px;
+    height: auto;
+}
+
+.footer .grupo-1 .box h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p {
+    color: var(--nbtxt);
+    margin-bottom: 10px;
+}
+
+.footer .grupo-1 .box a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .grupo-1 .box a:hover{
+    color: var(--nbtxt);
+}
+
+.footer .grupo-2 {
+    background-color: var(--navbar);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer .grupo-2 small {
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Modal*/
+/* Estilos para el modal */
+/* Estilo para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar el scroll dentro del modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: var(--fondo);
+    margin: 2% auto; /* Centrar verticalmente el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Máximo ancho del modal */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para el botón de cierre */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pedidoForm {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos uno debajo del otro */
+}
+
+/* Estilos para los campos de entrada */
+#pedidoForm label {
+    margin-bottom: 10px; /* Espacio entre etiquetas y campos de entrada */
+}
+
+#pedidoForm input,
+#pedidoForm textarea,
+#pedidoForm select,
+#pedidoForm button{
+    width: 100%; /* Ancho completo del campo de entrada */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+#pedidoForm button[type="submit"] {
+    background-color: var(--navbar); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+#pedidoForm button[type="submit"]:hover {
+    background-color: #333; /* Cambiar color de fondo al pasar sobre el botón */
+}
+
+@media screen and (max-width: 876px) {
+    .footer .grupo-1 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer .grupo-2 {
+        justify-content: center;
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    .footer .box {
+        margin: 5px 0;
+    }
+}
+
+/*Nosotros*/
+.img-container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.img {
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imagen-casa {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: top;
+}
+
+.overlay {
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; /* Ancho del cuadro blanco */
+    height: 100%; /* Alto del cuadro blanco, ajustado para cubrir toda la imagen */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #000;
+}
+
+.texto-superpuesto h3{
+    font-size: 50px;
+    transition: color 1s ease;
+}
+
+
+
+.texto-superpuesto p{
+    font-size: 30px;
+    color: var(--navbar)
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: space-between; /* Asegura que la imagen y el texto estén separados */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 5% auto 0 auto;
+}
+
+.creadoras {
+    flex: 2;
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+.creadoras .img-duenias {
+    max-width: 100%;
+    height: 800px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.historia {
+    flex: 3; /* Hacer el contenedor de la historia más ancho que el de la imagen */
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.historia h3 {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mision .mision-v{
+    text-align: center;
+    padding: 20px;
+    margin: 2px 0 0 0;
+    background: linear-gradient(90deg, #FE60C7 0%, #FF5C6B 73.96%);
+}
+
+.mision .mision-v h2{
+    font-size: 30px;
+    color: white;
+    cursor:context-menu;
+}
+
+.mision .mision-v h2 i{
+    margin: 10px;
+    font-size: 35px;
+}
+
+.mision .mision-texto{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    margin:  3% 5% 5% 5%;
+    border-radius: 40px;
+    padding: 2%;
+}
+
+.mision .mision-texto p{
+    font-size: 25px;
+    color: var(--navbar);
+    margin-bottom: 10px;
+}
+
+.mision .mision-texto p b{
+    font-size: 25px;
+    color: var(--navbar);
+}

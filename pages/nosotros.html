@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dulce Pasión</title>
+    <link rel="stylesheet" href="../CSS/stylen.css">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo"></img>
+            </a>
+        </div>
+        <nav>
+            <ul class="ul nav-links">
+                <li><a href="carta.html">Nuestra Carta</a></li>
+                <li><a href="blog.html">Blog Pasión</a></li>
+                <li><a href="casas.html">Nuestras Casas</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn" id="showForm"><button>¡Pide aquí!</button></a>
+    </header>
+
+    <!--Formulario-->
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario de Pedido</h2>
+            <form id="pedidoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pedido" class="pedido">Pedido</label>
+                <textarea id="pedido" name="pedido" required></textarea>
+
+                <label for="opciones">Elija una opción:</label>
+                <select id="opciones" name="opciones">
+                    <option value="recojo">Recojo en sede</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <div id="direccionSede" style="display: none;">
+                    <label for="direccionEmpresa">Dirección de la empresa:</label>
+                    <input type="text" id="direccionEmpresa" name="direccionEmpresa" readonly value="Av. José A. Larco 127, Miraflores">
+                </div>
+    
+                <div id="direccionDelivery" style="display: none;">
+                    <label for="direccionUsuario">Ingrese su dirección:</label>
+                    <input type="text" id="direccionUsuario" name="direccionUsuario">
+                </div>
+
+                <label for="fecha" class="fecha">Fecha del Pedido</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!--nosotros-->
+    <div class="img-container">
+        <div class="img">
+            <img src="../assets/imagen1.jpg" alt="Casa 1" class="imagen-casa">
+        </div>
+        <div class="overlay">
+            <div class="texto-superpuesto">
+                <h3 id="titulo">Dulce Pasión</h3>
+                <p>Hecho con la pasión de siempre y con un sabor único</p>
+            </div>
+        </div>
+    </div>
+    <div class="hcontainer">
+        <div class="creadoras">
+            <img src="../assets/dueñas.jpg" alt="dueñas" class="img-duenias">
+        </div>
+        <div class="historia">
+            <h3>Julia es la rubia que estudió comunicaciones y Ana es la de pelo café que estudió Derecho.</h3>
+            <h3>Dulce Pasión, comenzó como un pequeño emprendimiento en el año 2016 ideado por dos escolares, llamadas Julia y Ana. Julia, quien fue la que tomó la iniciativa de venta de postres puesto que su mamá le había regalado su primera batidora ya que a ella le gustaba la repostería y ya había llevado clases de repostería. Es así, que cuando hubo la necesidad de vender postres en el colegio para recaudar fondos para su viaje de promoción (5to año de secundaria), a Ana le pareció una buena idea y se unió a ella ya que también le gustaba la repostería; desde ahí empezaron a vender en la escuela, era un gusto culposo que estas dos mejores amigas compartían, descubriendo así que era algo que ambas disfrutaban hacer. Como resultado, fue un total éxito de ventas llegando así a la meta de la recaudación de fondos y un negocio que empezó a surgir de a pocos.
+                Ya teniendo el primer local desde el año 2022, han pasado por una montaña rusa de emociones que las ha ayudado a estar en la posición que están actualmente y que buscan día a día en superarse a sí mismas para poder expandirse y llegar a mucho más paladares con sus deliciosos pasteles.
+            </h3>
+        </div>
+    </div>
+
+    <div class="mision">
+        <div class="mision-v">
+            <h2><i class='bx bxs-paper-plane bx-flashing'></i>Misión</h2>
+        </div>
+        <div class="mision-texto">
+            <p>Producir y vender postres de calidad con frescura y a precios accesibles, para los distintos consumidores. Trabajando en constante innovación, satisfaciendo necesidades de nuestros clientes y comprometidos con el bienestar de nuestros colaboradores, socios y comunidad.</p>
+        </div>
+    </div>
+
+    <div class="mision">
+        <div class="mision-v">
+            <h2><i class='bx bxs-show bx-flashing' ></i>Vision</h2>
+        </div>
+        <div class="mision-texto">
+            <p>Lograr ser una marca reconocida a nivel nacional, posicionándonos en el mercado como la mejor empresa de productos de calidad de pastelería, caracterizada por utilizar ingredientes frescos de calidad y  por comprometernos con la salud de los consumidores. </p>
+        </div>
+    </div>
+
+    <div class="mision">
+        <div class="mision-v">
+            <h2><i class='bx bxs-donate-heart bx-flashing' ></i>Valores Corporativos</h2>
+        </div>
+        <div class="mision-texto">
+            <p><b>Pasión por la repostería</b></p>
+            <p>“Dulce Pasión Pastelería” se caracteriza por el amor por el arte de la repostería. Esta pasión se refleja en la meticulosa atención al detalle, el uso de ingredientes de alta calidad y la creatividad que se pone en la creación de cada postre.</p>
+            
+            <p><b>Compromiso con la Calidad</b></p>
+            <p>“Dulce Pasión Pastelería” siempre ha tenido un compromiso inquebrantable con la calidad. Estos van desde la selección de ingredientes locales frescos hasta la implementación de estrictos procesos de fabricación y un estricto control de calidad.</p>
+            
+            <p><b>Enfoque en el cliente</b></p>
+            <p>“Dulce Pasión Pastelería” pone a sus clientes en el centro de sus operaciones. Este enfoque se refleja en un servicio personalizado, voluntad de atender solicitudes especiales y compromiso para crear una experiencia inolvidable para cada cliente.</p>
+            
+            <p><b>Trabajo en equipo</b></p>
+            <p> “Dulce Pasión Pastelería” reconoce el poder del trabajo en equipo para lograr objetivos. La panadería fomenta un entorno colaborativo y de apoyo donde empleados de diversos orígenes trabajan juntos para compartir conocimientos, inspirar creatividad y fomentar la innovación.</p>
+
+            <p><b>Responsabilidad social</b></p>
+            <p>“Dulce Pasión Pastelería” asume su responsabilidad como miembro de la comunidad. La panadería apoya activamente iniciativas locales, promueve prácticas sostenibles y se esfuerza por tener un impacto positivo en el medio ambiente y la vida que los rodea</p>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../assets/logo.png" alt="logo"></img>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <a href="nosotros.html" class="">
+                    <b>Nosotros</b>
+                </a>
+            </div>
+            <div class="box">
+                <a href="carta.html">
+                    <b>Carta</b>
+                </a>
+            </div>
+            <div class="box">
+                <a href="contactenos.html">
+                    <b>Contáctenos</b>
+                </a>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>
+                © 2016 Dulce Pasión. Todos los derechos reservados.
+            </small>
+        </div>
+        <div class="grupo-2">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+        </div>
+    </footer>
+
+<script src="../JS/scriptn.js"></script>
+</body>
+</html>
