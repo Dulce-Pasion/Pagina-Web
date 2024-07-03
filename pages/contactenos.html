@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dulce Pasión</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/stylec.css">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <!--Navbar-->
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="logo"></img>
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo"></img>
             </a>
         </div>
         <nav>
             <ul class="ul nav-links">
-                <li><a href="index.html">Nuestra Carta</a></li>
-                <li><a href="index.html">Blog Pasión</a></li>
-                <li><a href="index.html">Nuestras Casas</a></li>
+                <li><a href="../index.html">Nuestra Carta</a></li>
+                <li><a href="../index.html">Blog Pasión</a></li>
+                <li><a href="../index.html">Nuestras Casas</a></li>
             </ul>
         </nav>
         <a href="#" class="btn" id="showForm"><button>¡Pide aquí!</button></a>
@@ -66,32 +66,45 @@
         </div>
     </div>
 
-
-    <!--Carrousel-->
-    <div class="carrousel">
-        <div class="grande">
-            <div class="img-container">
-                <img class="img" src="assets/imagen1.jpg" alt="Imagen 1"></img>
-            </div>
-            <div class="img-container">
-                <img class="img" src="assets/imagen2.jpg" alt="Imagen 2"></img>
-            </div>
-            <div class="img-container">
-                <img class="img" src="assets/imagen3.jpg" alt="Imagen 3"></img>
-            </div>
-            <div class="img-container">
-                <img class="img" src="assets/imagen4.jpg" alt="Imagen 4"></img>
-            </div>
+    <!--Contactenos-->
+    <section class="contacto">
+        <div class="contacto-left">
+            <h2>Contáctenos</h2>
+            <p>Si tienes alguna duda, sugerencia o simplemente quieres saludarnos, no dudes en escribirnos. Estamos para ayudarte.</p>
         </div>
-    </div>
+        <div class="contacto-right">
+            <form id="contactoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" required>
+                
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" required>
+    
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
 
     <!--Footer-->
     <footer class="footer">
         <div class="grupo-1">
             <div class="box">
                 <figure>
-                    <a href="#">
-                        <img src="assets/logo.png" alt="logo"></img>
+                    <a href="../index.html">
+                        <img src="../assets/logo.png" alt="logo"></img>
                     </a>
                 </figure>
             </div>
@@ -106,7 +119,7 @@
                 </a>
             </div>
             <div class="box">
-                <a href="pages/contactenos.html">
+                <a href="">
                     <b>Contáctenos</b>
                 </a>
             </div>
@@ -122,6 +135,6 @@
         </div>
     </footer>
 
-<script src="JS/script.js"></script>
+<script src="../JS/scriptc.js"></script>
 </body>
 </html>
