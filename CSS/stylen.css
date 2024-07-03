@@ -295,6 +295,7 @@ header .btn button:hover{
 }
 
 .texto-superpuesto h3{
+    margin-top: 40px;
     font-size: 50px;
     transition: color 1s ease;
 }
@@ -303,7 +304,9 @@ header .btn button:hover{
 
 .texto-superpuesto p{
     font-size: 30px;
-    color: var(--navbar)
+    color: var(--navbar);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .hcontainer {
