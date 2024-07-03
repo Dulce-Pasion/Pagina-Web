@@ -21,8 +21,49 @@
                 <li><a href="index.html">Nuestras Casas</a></li>
             </ul>
         </nav>
-        <a href="" class="btn"><button>¡Pide aquí!</button></a>
+        <a href="#" class="btn" id="showForm"><button>¡Pide aquí!</button></a>
     </header>
+
+    <!--Formulario-->
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario de Pedido</h2>
+            <form id="pedidoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pedido" class="pedido">Pedido</label>
+                <textarea id="pedido" name="pedido" required></textarea>
+
+                <label for="opciones">Elija una opción:</label>
+                <select id="opciones" name="opciones">
+                    <option value="recojo">Recojo en sede</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <div id="direccionSede" style="display: none;">
+                    <label for="direccionEmpresa">Dirección de la empresa:</label>
+                    <input type="text" id="direccionEmpresa" name="direccionEmpresa" readonly value="Av. José A. Larco 127, Miraflores">
+                </div>
+    
+                <div id="direccionDelivery" style="display: none;">
+                    <label for="direccionUsuario">Ingrese su dirección:</label>
+                    <input type="text" id="direccionUsuario" name="direccionUsuario">
+                </div>
+
+                <label for="fecha" class="fecha">Fecha del Pedido</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
 
     <!--Carrousel-->
     <div class="carrousel">
@@ -79,6 +120,6 @@
         </div>
     </footer>
 
-    <script src="JS/script.js"></script>
+<script src="JS/script.js"></script>
 </body>
 </html>
