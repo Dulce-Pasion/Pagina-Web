@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playwrite IT Moderna', sans-serif;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+:root{
+    --fondo: #F2DCE4;
+    --navbar: #733D56;
+    --nbtxt: #F294D9;
+    --gradiente:  linear-gradient(92deg, #F26B8F 18.5%, #F28DCF 82%)
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+/*Header*/
+
+header{
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10%;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 70px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .nav-links{
+    list-style: none;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-links li a:hover{
+    color: var(--nbtxt);
+}
+
+header .btn button{
+    font-weight: 700;
+    color: #fff;
+    padding: 9px 25px;
+    background: linear-gradient(92deg, #F26B8F 18.5%, #F28DCF 82%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+header .btn button:hover{
+    background: linear-gradient(92deg, #F28DCF 18.5%, #F26B8F 82%);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/*Footer*/
+
+.footer {
+    background-color: var(--navbar);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer .grupo-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .grupo-1 .box {
+    flex: 1;
+    min-width: 150px;
+    padding: 0;
+}
+
+.footer .grupo-1 figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 figure img {
+    width: 70px;
+    height: auto;
+}
+
+.footer .grupo-1 .box h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p {
+    color: var(--nbtxt);
+    margin-bottom: 10px;
+}
+
+.footer .grupo-1 .box a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .grupo-1 .box a:hover{
+    color: var(--nbtxt);
+}
+
+.footer .grupo-2 {
+    background-color: var(--navbar);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer .grupo-2 small {
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Modal*/
+/* Estilos para el modal */
+/* Estilo para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar el scroll dentro del modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: var(--fondo);
+    margin: 2% auto; /* Centrar verticalmente el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Máximo ancho del modal */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para el botón de cierre */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pedidoForm {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos uno debajo del otro */
+}
+
+/* Estilos para los campos de entrada */
+#pedidoForm label {
+    margin-bottom: 10px; /* Espacio entre etiquetas y campos de entrada */
+}
+
+#pedidoForm input,
+#pedidoForm textarea,
+#pedidoForm select,
+#pedidoForm button{
+    width: 100%; /* Ancho completo del campo de entrada */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+#pedidoForm button[type="submit"] {
+    background-color: var(--navbar); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 4px; /* Borde redondeado */
+}
+
+#pedidoForm button[type="submit"]:hover {
+    background-color: #333; /* Cambiar color de fondo al pasar sobre el botón */
+}
+
+@media screen and (max-width: 876px) {
+    .footer .grupo-1 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer .grupo-2 {
+        justify-content: center;
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    .footer .box {
+        margin: 5px 0;
+    }
+}
+
+/*Nosotros*/
+.img-container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.img {
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imagen-casa {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: top;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #000;
+}
+
+.texto-superpuesto h3{
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 50px;
+    transition: color 1s ease;
+}
+
+.texto-superpuesto p{
+    font-size: 30px;
+    color: var(--navbar);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+
+/*Carta*/
+.carta {
+    padding: 20px;
+    text-align: center;
+}
+
+.filtros {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background: linear-gradient(92deg, #F26B8F 18.5%, #F28DCF 82%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background: linear-gradient(92deg, #F28DCF 18.5%, #F26B8F 82%);
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33.333% - 40px); /* Ajuste para hacer las tarjetas más anchas */
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 400px; /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.flex-container{
+    display: flex;
+    gap:10px;
+    align-items: baseline;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+
+    .filter-btn {
+        margin-bottom: 10px;
+    }
+
+    .cards-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-btn {
+        padding: 8px 16px;
+    }
+
+    .card {
+        padding: 5px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+}

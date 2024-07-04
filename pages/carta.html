@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dulce Pasión</title>
+    <link rel="stylesheet" href="../CSS/stylem.css">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo"></img>
+            </a>
+        </div>
+        <nav>
+            <ul class="ul nav-links">
+                <li><a href="carta.html">Nuestra Carta</a></li>
+                <li><a href="blog.html">Blog Pasión</a></li>
+                <li><a href="casas.html">Nuestras Casas</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn" id="showForm"><button>¡Pide aquí!</button></a>
+    </header>
+
+    <!--Formulario-->
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario de Pedido</h2>
+            <form id="pedidoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pedido" class="pedido">Pedido</label>
+                <textarea id="pedido" name="pedido" required></textarea>
+
+                <label for="opciones">Elija una opción:</label>
+                <select id="opciones" name="opciones">
+                    <option value="recojo">Recojo en sede</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <div id="direccionSede" style="display: none;">
+                    <label for="direccionEmpresa">Dirección de la empresa:</label>
+                    <input type="text" id="direccionEmpresa" name="direccionEmpresa" readonly value="Av. José A. Larco 127, Miraflores">
+                </div>
+    
+                <div id="direccionDelivery" style="display: none;">
+                    <label for="direccionUsuario">Ingrese su dirección:</label>
+                    <input type="text" id="direccionUsuario" name="direccionUsuario">
+                </div>
+
+                <label for="fecha" class="fecha">Fecha del Pedido</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Carta-->
+    <section class="carta">
+        <div class="filtros">
+            <button class="filter-btn" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="minicakes">Minicakes</button>
+            <button class="filter-btn" data-category="tortas">Tortas</button>
+            <button class="filter-btn" data-category="bocaditos">Bocaditos</button>
+            <button class="filter-btn" data-category="cumpleaños">Cumpleaños</button>
+        </div>
+
+        <div class="cards-container">
+            <div class="card minicakes">
+                <img src="../assets/minicake1.jpg" alt="Minicake 1">
+                <h2>Minicake de Chocolate</h2>
+                <p><b>Costo:</b> S/.15</p>
+            </div>
+            <div class="card tortas">
+                <img src="../assets/torta1.jpg" alt="Torta 1">
+                <h2>Torta de Chocolate</h2>
+                <p class="flex-container"><b>Porcion:</b> S/.16 &nbsp;<b>Costo:</b> S/.70</p>
+            </div>
+            <div class="card bocaditos">
+                <img src="../assets/bocadito1.jpg" alt="Bocadito 1">
+                <h2>Mini Triple</h2>
+                <p><b>Costo (10 und):</b> S/.10</p>
+            </div>
+            <div class="card cumpleaños">
+                <img src="../assets/cumpleanios1.jpg" alt="Cumpleaños 1">
+                <h2>Pastel de Cumpleaños Chantilly</h2>
+                <p>*se puede hacer con o sin gluten</p>
+                <p>*precio previa coordinación</p>
+            </div>
+            <div class="card minicakes">
+                <img src="../assets/minicake2.jpg" alt="Minicake 2">
+                <h2>Minicake Red Velvet</h2>
+                <p><b>Costo:</b> S/.15</p>
+            </div>
+            <div class="card tortas">
+                <img src="../assets/torta2.jpg" alt="Torta 2">
+                <h2>Torta de Red Velvet</h2>
+                <p class="flex-container"><b>Porcion:</b> S/.16 &nbsp;<b>Costo:</b> S/.70</p>
+            </div>
+            <div class="card bocaditos">
+                <img src="../assets/bocadito2.jpg" alt="Bocadito 2">
+                <h2>Empanadas de pollo y/o carne</h2>
+                <p><b>Costo (10 und):</b> S/.10</p>
+            </div>
+            <div class="card cumpleaños">
+                <img src="../assets/cumpleanios2.jpg" alt="Cumpleaños 2">
+                <h2>Pastel de Cumpleaños Buttercream</h2>
+                <p>*se puede hacer con o sin gluten</p>
+                <p>*precio previa coordinación</p>
+            </div>
+            <div class="card tortas">
+                <img src="../assets/torta3.jpg" alt="Torta 3">
+                <h2>Torta Selva Negra</h2>
+                <p class="flex-container"><b>Porcion:</b> S/.16 &nbsp;<b>Costo:</b> S/.70</p>
+            </div>
+            <div class="card bocaditos">
+                <img src="../assets/bocadito3.jpg" alt="Bocadito 3">
+                <h2>Galletas Red Velvet con chispas de Chocolate</h2>
+                <p><b>Costo (10 und):</b> S/.12</p>
+            </div>
+            <div class="card cumpleaños">
+                <img src="../assets/cumpleanios3.jpg" alt="Cumpleaños 3">
+                <h2>Pastel de cumpleaños viva el Fondant</h2>
+                <p>*se puede hacer con o sin gluten</p>
+                <p>*precio previa coordinación</p>
+            </div>
+            <div class="card tortas">
+                <img src="../assets/torta4.jpg" alt="Torta 4">
+                <h2>Torta de Tres Leches</h2>
+                <p class="flex-container"><b>Porcion:</b> S/.16 &nbsp;<b>Costo:</b> S/.70</p>
+            </div>
+            <div class="card bocaditos">
+                <img src="../assets/bocadito4.jpg" alt="Bocadito 4">
+                <h2>Alfajores</h2>
+                <p><b>Costo (10 und):</b> S/.12</p>
+            </div>
+            <div class="card tortas">
+                <img src="../assets/torta5.jpg" alt="Torta 5">
+                <h2>Torta de Zanahoria</h2>
+                <p class="flex-container"><b>Porcion:</b> S/.16 &nbsp;<b>Costo:</b> S/.70</p>
+            </div>
+            <div class="card bocaditos">
+                <img src="../assets/bocadito5.jpg" alt="Bocadito 5">
+                <h2>Galletas Chocochips</h2>
+                <p><b>Costo (10 und):</b> S/.12</p>
+            </div>
+            <div class="card tortas">
+                <img src="../assets/torta6.jpg" alt="Torta 6">
+                <h2>Torta de Arándanos</h2>
+                <p class="flex-container"><b>Porcion:</b> S/.16 &nbsp;<b>Costo:</b> S/.70</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../assets/logo.png" alt="logo"></img>
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <a href="nosotros.html" class="">
+                    <b>Nosotros</b>
+                </a>
+            </div>
+            <div class="box">
+                <a href="carta.html">
+                    <b>Carta</b>
+                </a>
+            </div>
+            <div class="box">
+                <a href="contactenos.html">
+                    <b>Contáctenos</b>
+                </a>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>
+                © 2016 Dulce Pasión. Todos los derechos reservados.
+            </small>
+        </div>
+        <div class="grupo-2">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+        </div>
+    </footer>
+
+<script src="../JS/scriptm.js"></script>
+</body>
+</html>
