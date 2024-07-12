@@ -13,7 +13,7 @@ function moverCarrusel() {
 }
 
 // Mueve el carrusel cada 3 segundos
-setInterval(moverCarrusel, 3000);
+setInterval(moverCarrusel, 5000);
 
 
 // Obtenemos referencias a los elementos del DOM
